@@ -1,12 +1,5 @@
 MIN_ALLOWED_RANGE_LENGTH = 2
 
-def isInteger(obj):
-    try:
-        int(obj)
-        return True
-    except ValueError:
-        return False
-
 def validate_list_of(arr, type):
     if not isinstance(arr, list):
         raise Exception("No list instance provided")
