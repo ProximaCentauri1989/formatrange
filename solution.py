@@ -19,7 +19,7 @@ def solution(arr):
         right = index
         while(right + 1 < length and arr[right + 1] - arr[right] == 1):
             right+=1
-        elem = '{}-{}'.format(arr[index], arr[right]) if right - index >= MIN_ALLOWED_RANGE_LENGTH else '{}'.format(arr[index])
+        elem = f'{arr[index]}-{arr[right]}' if right - index >= MIN_ALLOWED_RANGE_LENGTH else f'{arr[index]}'
         index = right + 1 if right - index >= MIN_ALLOWED_RANGE_LENGTH else index + 1
         if index < length - 1:
             elem += ','
