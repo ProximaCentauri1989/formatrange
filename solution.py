@@ -1,6 +1,3 @@
-from typing import cast
-
-
 MIN_ALLOWED_RANGE_LENGTH = 2
 
 def isInteger(obj):
